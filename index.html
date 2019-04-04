@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>calculator</title>
+
+	<!-- CSS links -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1>My simple calculator</h1>
+	<main id="calculator">
+		<form>
+			<input id="display" type="text" name="display">
+
+				<br />
+
+				<input type="button" value="C" id="buttondigits" onclick="addtoscreen('c')">
+				<input type="button" value="CE" id="buttondigits" onclick="backspace()">
+				<input type="button" value="X^2" id="buttondigits" onclick="power()">
+				<input type="button" value="+" id="buttondigits" onclick="addtoscreen('+')">
+
+				<br />
+
+				<input type="button" value="9" id="buttondigits" onclick="addtoscreen('9')">
+				<input type="button" value="8" id="buttondigits" onclick="addtoscreen('8')">
+				<input type="button" value="7" id="buttondigits" onclick="addtoscreen('7')">
+				<input type="button" value="-" id="buttondigits" onclick="addtoscreen('-')">
+
+				<br />
+				
+				<input type="button" value="6" id="buttondigits" onclick="addtoscreen('6')">
+				<input type="button" value="5" id="buttondigits" onclick="addtoscreen('5')">
+				<input type="button" value="4" id="buttondigits" onclick="addtoscreen('4')">
+				<input type="button" value="*" id="buttondigits" onclick="addtoscreen('*')">
+
+				<br />
+
+				<input type="button" value="3" id="buttondigits" onclick="addtoscreen('3')">
+				<input type="button" value="2" id="buttondigits" onclick="addtoscreen('2')">
+				<input type="button" value="1" id="buttondigits" onclick="addtoscreen('1')">
+				<input type="button" value="/" id="buttondigits" onclick="addtoscreen('/')">
+
+				<br />
+
+				<input type="button" value="0" id="buttondigits" onclick="addtoscreen('0')">
+				<input type="button" value="." id="buttondigits" onclick="addtoscreen('.')">
+				<input type="button" value="=" id="equals" onclick="answer()">
+
+				<br />
+		</form>
+		
+		
+	</main><!-- ./container -->  
+
+	<!-- All your JavaScript comes now -->
+	<script src="js/scripts.js"></script>
+</body>
+</html>
